@@ -21,13 +21,8 @@
 #include <std_msgs/Float32MultiArray.h>
 #include <opencv2/opencv.hpp>
 
-using namespace std;
-using namespace cv;
+class RiptideVision{
+public:
+	static cv::Mat seperateColors(cv::Mat src, std::vector<int> colors);
+};
 
-namespace RiptideVision{
-	class visionFunctions
-	{
-	public:
-		Mat seperateColors(Mat src, std::vector<int>& colors);
-	};
-}
